@@ -1,0 +1,151 @@
+/* 
+    Document   : stsheet
+    Created on : Oct 4, 2020, 9:17:36 PM
+    Author     : mm
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+body { 
+    background-image: url(images/bg-pattern-desktop.svg);
+    font-family: 'Josefin Sans', sans-serif;
+    background-size: 1190px;
+    font-size: 16px;
+    margin: 0 0 ;
+}
+.div1 {
+    float: left;
+    width: 50%;
+    
+}
+.div1 .logo{
+    padding-left: 150px;
+    padding-top: 45px;
+    
+}
+.div1 .head1 {
+    color: #daaaaa;
+    font-weight: 200;
+    
+}
+.div1 .head2{
+    padding-top:70px; 
+    font-size: 60px;
+    padding-left: 150px;
+    
+}
+.div1 .content{
+    color: #daaaaa;
+    margin-top:-30px;
+    padding-left: 150px;
+    line-height: 1.5em;
+    padding-bottom: 20px;
+   
+}
+.div2 img{
+    float: right;
+    margin-top: 0px;
+    width: 45%;
+}
+.mob {
+    display: none;
+}
+.div1 #email {
+    
+    margin-left: 150px;
+    width: 62%;
+    height: 50px;
+    border: 1px solid hsl(0deg 20% 80%);
+    border-radius: 50px 50px;
+    padding-left: 30px;
+    outline: none;
+   
+}
+ ::placeholder {
+   color: #e6c3c3;
+   
+}
+.div1 #form {
+    position: relative;
+    
+}
+.div1 .arrow {
+    background-color:hsl(0deg 90% 83%);
+    
+    
+}
+.div1 .error {
+   margin-left: -140px;
+    position: absolute;
+    padding-top: 13px;
+    visibility: hidden;
+    
+}
+.div1 .btn {
+    background-color: hsl(0deg 90% 83%);
+    width: 8%;
+    height: 55px;
+    border-radius: 50px 50px;
+    border: none;
+    position: absolute;
+    margin-left: -102px;
+    cursor: pointer;
+    outline: none;
+}
+.div1 .btn:hover{
+    opacity: .8;
+}
+.div1 #text{
+    color: hsl(0deg 100% 77%);
+    padding-left: 173px;
+    margin-top: 5px;
+    
+}
+@media (max-width:700px){
+    .div2 img {
+    display: none;
+}
+.div1  {
+   width: 100%;
+    
+}
+.div1 .logo{
+    padding-left: 50px;
+   
+    
+}
+.mob {
+    display: block;
+    width: 100%;
+    padding-top: 10px;
+}
+.div1 .head2 {
+   width: 90%;
+    text-align: center;
+   padding-left: 0px;
+    
+}
+.div1 .content {
+   width: 95%;
+   text-align: center;
+   padding-left: 0px;
+    
+}
+.div1 #email {
+    
+    margin-left: 10%;
+   
+}
+.div1 .btn {
+   
+    margin-left:-72px;
+    width: 15%;
+    
+}
+.div1 .error {
+   margin-left: -110px;
+    
+    
+}
+    
+}

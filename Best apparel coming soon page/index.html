@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Skill Safari | Base apparel coming soon Page</title>
+        <link rel="icon"  href="images/favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&amp;display=swap" rel="stylesheet">    </head>
+    <body>
+        <div class="div1">
+            <img class="logo" src="images/logo.svg" alt="BASE APPAREL">
+           
+       
+            <img class="mob" src="images/hero-mobile.jpg" alt="">
+            
+            <h1 class="head2"><i class="head1">W E 'RE</i><br>C O M I N G
+                <br>S O O N</h1>
+            
+            <P class="content">Building a Awesome Website! Stay Tuned😎</P>
+            
+            <input id="email" name="mail" type="text" onfocus="this.value=''" placeholder="Email Address">
+                <img  id="ero" class="error" src="images/icon-error.svg" alt="">
+                <button  onclick="myFunction()" class="btn">
+                 <img  class="arrow" src="images/icon-arrow.svg" alt="submit">
+                </button>
+                
+                <p id="text"></p>
+              
+                
+            
+            
+        </div>
+        <div class="div2">
+            <img src="images/hero-desktop.jpg" alt="">
+            
+        </div>
+        
+        <script>
+function myFunction() {
+  var mail= document.getElementById("email").value;
+  var pat=/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+   if(mail.match(pat)){
+                 document.getElementById("text").style.color ="rose";
+                 document.getElementById("text").innerHTML ="thanks for your interest in us";
+                 document.getElementById("ero").style.visibility='hidden';
+                 document.getElementById("email").style.border= "1px solid hsl(0deg 20% 80%)";
+        
+        
+            }
+            else
+                {
+               
+                document.getElementById("text").style.color ="hsl(0, 93%, 68%)";
+                document.getElementById("text").innerHTML ="please provide availd email";
+        document.getElementById("ero").style.visibility='visible';
+        document.getElementById("email").style.border= "2px solid hsl(0, 93%, 68%)";
+            }
+  
+  
+  
+}
+</script>
+        
+                
+    </body>
+</html>
